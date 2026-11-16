@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Assistance de l'app iPhone « Plume » : sauvegarde, restauration, export, Apple Santé, suppression des données, contact.">
-  <title>Assistance — Plume</title>
+  <meta name="description" content="Assistance de l'app iPhone « Goug » : sauvegarde, restauration, export, Apple Santé, Décrire mon repas, journal de traitement, suppression des données, contact.">
+  <title>Assistance — Goug</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="index.html">Plume</a>
+      <a class="brand" href="index.html">Goug</a>
       <nav class="site" aria-label="Navigation">
         <a href="index.html">Accueil</a>
         <a href="support.html" aria-current="page">Assistance</a>
@@ -47,7 +47,8 @@
         <strong>Profil ▸ Réglages, données &amp; export</strong> :</p>
       <ul>
         <li><strong>Exporter mes données (.json)</strong> crée un fichier avec ton suivi (profil, repas,
-          pesées, eau, sport, jeûnes, mensurations, photos de progression…), à enregistrer où tu veux ;</li>
+          pesées, eau, sport, jeûnes, mensurations, photos de progression, bibliothèque d'aliments, journal
+          de traitement…), à enregistrer où tu veux ;</li>
         <li><strong>Sauvegarde automatique ▸ Choisir un dossier sur l'iPhone</strong> enregistre une copie
           chaque jour dans un dossier « Sur mon iPhone » (les 7 dernières sont gardées).</li>
       </ul>
@@ -63,8 +64,18 @@
         ton fichier de sauvegarde.</p>
       <p><strong>Attention :</strong> l'import remplace toutes les données déjà présentes dans l'app.
         Cette action est irréversible.</p>
-      <p>Les données que l'app a écrites dans Apple Santé (poids, eau, énergie des repas) suivent ton
+      <p>Les données que l'app a écrites dans Apple Santé (poids, eau, énergie des repas et leurs macros) suivent ton
         compte Santé, indépendamment de l'app.</p>
+    </details>
+
+    <details>
+      <summary>Mes aliments créés et mon journal de traitement sont-ils sauvegardés ?</summary>
+      <p>Oui. L'export (.json) et la sauvegarde automatique contiennent aussi ta <strong>bibliothèque
+        d'aliments</strong> (aliments créés, produits scannés, favoris) et, si tu l'utilises, ton
+        <strong>journal de traitement</strong>.</p>
+      <p>À l'import, un fichier récent qui les contient remplace ceux de l'app, comme le reste des données.
+        Un ancien fichier, fait avant cet ajout, ne les contient pas : ta bibliothèque et ton journal restent
+        alors tels quels dans l'app.</p>
     </details>
 
     <details>
@@ -83,7 +94,7 @@
         <li><strong>Sauvegardes</strong> : les fichiers exportés et le dossier de sauvegarde automatique
           ne sont pas effacés avec l'app ; supprime-les depuis l'app Fichiers.</li>
         <li><strong>Apple Santé</strong> : les données écrites dans Santé y restent. Pour les effacer :
-          Réglages de l'iPhone ▸ Santé ▸ Accès aux données et appareils ▸ Plume ▸
+          Réglages de l'iPhone ▸ Santé ▸ Accès aux données et appareils ▸ Goug ▸
           Supprimer toutes les données.</li>
       </ul>
       <p>L'éditeur ne détient aucune copie de tes données : il n'y a rien à effacer de son côté.</p>
@@ -97,12 +108,17 @@
         de pesée). Tu choisis ensuite, type par type, ce que l'app peut lire et écrire.</p>
       <p>Avec ton accord, l'app lit ton poids, tes séances, tes pas, ton énergie active, ton sommeil et,
         si tu utilises le suivi du cycle, tes règles ; elle écrit ton poids, ton eau et l'énergie de tes
-        repas. L'app Apple Watch enregistre tes séances de sport dans Santé et Forme.</p>
+        repas, avec leurs protéines, glucides, lipides et fibres. L'app Apple Watch enregistre tes séances
+        de sport dans Santé et Forme.</p>
+      <p>Dans <strong>Réglages ▸ Apple Santé</strong>, deux interrupteurs : « Importer mes séances depuis
+        Santé » (désactivé par défaut : ajoute à ton journal de sport tes séances des 30 derniers jours,
+        puis les nouvelles, sans doublon ; une séance supprimée ne revient pas) et « Écrire les macros dans
+        Santé ». Tout reste sur ton iPhone.</p>
     </details>
 
     <details>
       <summary>Comment retirer l'accès à Santé ?</summary>
-      <p>Réglages de l'iPhone ▸ Santé ▸ Accès aux données et appareils ▸ Plume : désactive les
+      <p>Réglages de l'iPhone ▸ Santé ▸ Accès aux données et appareils ▸ Goug : désactive les
         catégories voulues. L'app continue de fonctionner sans Santé.</p>
     </details>
 
@@ -111,13 +127,43 @@
     <details>
       <summary>Le scan du code-barres ou la photo de repas ne marche pas</summary>
       <ul>
-        <li>Vérifie que l'app a accès à l'appareil photo : Réglages de l'iPhone ▸ Apps ▸ Plume.</li>
+        <li>Vérifie que l'app a accès à l'appareil photo : Réglages de l'iPhone ▸ Apps ▸ Goug.</li>
         <li>La recherche en ligne et le code-barres utilisent Open Food Facts : une connexion internet est
           nécessaire. La base de plus de 800 aliments courants, elle, marche hors ligne.</li>
         <li>Produit introuvable : tu peux le créer à la main avec les valeurs de l'étiquette.</li>
         <li>La photo propose des aliments de la base : vérifie toujours la liste et les quantités avant
           de valider.</li>
       </ul>
+    </details>
+
+    <details>
+      <summary>Comment fonctionne « Décrire mon repas » ?</summary>
+      <p>Dans l'écran d'ajout d'un repas, touche <strong>Décrire mon repas</strong>, puis écris ou dicte
+        (avec le micro du clavier) une phrase comme « 2 œufs, une tranche de pain complet et 200 g de riz ».
+        L'app retrouve les aliments dans sa base : tu ajustes les quantités et tu valides avant l'ajout.
+        Un aliment « non trouvé » se cherche avec la barre de recherche ou le code-barres.</p>
+      <p>Sur un iPhone compatible avec Apple Intelligence activé, l'IA aide à découper la phrase ; sinon,
+        des règles sur l'iPhone s'en chargent (français, anglais, espagnol, allemand, italien). Dans les deux
+        cas, tout est analysé sur l'appareil, et les valeurs nutritionnelles viennent toujours de la base de
+        l'app, jamais d'une estimation de l'IA. La dictée est celle du clavier d'iOS.</p>
+    </details>
+
+    <details>
+      <summary>J'ai ajouté un verre d'eau par erreur</summary>
+      <p>Juste après l'ajout, un bandeau propose <strong>Annuler</strong> : la prise est retirée de l'app et,
+        si tu l'avais autorisé, d'Apple Santé. Plus tard, supprime-la depuis l'écran Eau.</p>
+    </details>
+
+    <details>
+      <summary>À quoi sert le journal de traitement ?</summary>
+      <p>C'est un carnet personnel et facultatif, dans <strong>Progrès ▸ Outils ▸ Journal de traitement</strong>,
+        pour suivre un traitement hebdomadaire par injection prescrit par ton médecin : tu notes chaque
+        prise (date, dose, site, effets ressentis, remarque). Un rappel hebdomadaire facultatif existe dans
+        <strong>Profil ▸ Rappels &amp; notifications</strong>.</p>
+      <p>L'app ne propose jamais de dose, ne cite aucun médicament et ne remplace pas l'avis de ton médecin
+        ou de ton pharmacien : parles-en avec eux, surtout si des effets durent ou t'inquiètent. Le journal
+        reste sur ton iPhone et fait partie de ta sauvegarde. Pour supprimer une prise, balaye-la vers la
+        gauche (un bandeau permet d'annuler).</p>
     </details>
 
     <details>
@@ -176,6 +222,15 @@
       </details>
 
       <details>
+        <summary>Are my own foods and my treatment journal backed up?</summary>
+        <p>Yes. The export (.json) and the automatic backup also contain your <strong>food library</strong>
+          (foods you created, scanned products, favorites) and, if you use it, your <strong>treatment
+          journal</strong>. Importing a recent file replaces the ones in the app, like the rest of your data;
+          an older file made before this addition does not contain them, so your library and journal stay
+          as they are.</p>
+      </details>
+
+      <details>
         <summary>How do I restore my data or move to a new iPhone?</summary>
         <p>Install the app, then go to <strong>Profile ▸ Settings, data &amp; export ▸ Import data (.json)</strong>
           and pick your backup file. Importing replaces all data already in the app and cannot be undone.</p>
@@ -191,15 +246,47 @@
         <p>Delete a single entry where it appears in the app, or delete the app to erase all its data.
           Exported files and the automatic backup folder are not removed with the app: delete them in the
           Files app. Data written to Apple Health stays there: iPhone Settings ▸ Health ▸ Data Access &amp;
-          Devices ▸ Plume ▸ Delete All Data. The publisher holds no copy of your data.</p>
+          Devices ▸ Goug ▸ Delete All Data. The publisher holds no copy of your data.</p>
       </details>
 
       <details>
         <summary>Apple Health</summary>
         <p>Connect it from <strong>Sport ▸ Connect Apple Health</strong>. With your permission, the app reads
           weight, workouts, steps, active energy, sleep and, if you use cycle tracking, menstrual data; it
-          writes weight, water and meal energy. You can revoke access at any time in iPhone Settings ▸ Health
+          writes weight, water and meal energy with its protein, carbs, fat and fiber. In
+          <strong>Settings ▸ Apple Health</strong>, “Import my workouts from Health” (off by default) adds
+          your workouts from the last 30 days, then new ones, to your sport log without duplicates, and
+          “Write macros to Health” controls the macros. Everything stays on your iPhone. You can revoke access at any time in iPhone Settings ▸ Health
           ▸ Data Access &amp; Devices.</p>
+      </details>
+
+      <details>
+        <summary>How does “Describe my meal” work?</summary>
+        <p>On the add-meal screen, tap <strong>Describe my meal</strong>, then type or dictate (with the
+          keyboard microphone) a sentence such as “2 eggs, a slice of whole-grain bread and 200 g of rice”.
+          The app finds the foods in its database: you adjust the amounts and confirm before anything is
+          added. A food that is “not found” can be searched for with the search bar or the barcode.</p>
+        <p>On a compatible iPhone with Apple Intelligence turned on, the AI helps split the sentence;
+          otherwise simple rules on the iPhone do it (English, French, Spanish, German, Italian). Either way,
+          everything is analyzed on your device, and nutrition values always come from the app's database,
+          never from an AI estimate. Dictation is the standard iOS keyboard dictation.</p>
+      </details>
+
+      <details>
+        <summary>I added a glass of water by mistake</summary>
+        <p>Right after adding it, a banner offers <strong>Cancel</strong>: the entry is removed from the app
+          and, if you had allowed it, from Apple Health. Later, delete it from the Water screen.</p>
+      </details>
+
+      <details>
+        <summary>What is the treatment journal for?</summary>
+        <p>It is an optional personal notebook, in <strong>Progress ▸ Tools ▸ Treatment journal</strong>, for
+          following a weekly injection treatment prescribed by your doctor: you note each dose taken (date,
+          dose, site, side effects felt, a remark). An optional weekly reminder is in
+          <strong>Profile ▸ Reminders &amp; notifications</strong>.</p>
+        <p>The app never suggests a dose, names no medication and does not replace the advice of your doctor
+          or pharmacist: talk to them, especially if effects last or worry you. The journal stays on your
+          iPhone and is part of your backup. To delete an entry, swipe it left (a banner lets you undo).</p>
       </details>
 
       <details>
